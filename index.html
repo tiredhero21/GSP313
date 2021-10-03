@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHFEST | PCCOE</title>
+    <meta name = "keywords" content = "techfest pccoe, pccoe techfest, festx pccoe, pccoe, pccoe events, techfest, techfest 2021" />
+    <meta name="description" content="PCCOE Techfest by department of Electronics and Telecommunications, In Association with ETSA and IETE student forum" />
+    <meta name="google-site-verification" content="NnHJTemtwH4xvkIUj-guYveymCiVXybcuquVxAQYFRU" />
+    <link rel="icon" href="img/festx.jpg">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://use.fontawesome.com/9fc82f32ca.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Abril+Fatface&family=Quantico:ital@1&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="canonical" href="https://festx.tech/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FestX | PCCOE" />
+    <meta property="og:description" content="PCCOE Techfest by department of Electronics and Telecommunications, In Association with ETSA and IETE student forum" />
+    <meta property="og:url" content="https://festx.tech/" />
+    <meta property="og:site_name" content="FestX | PCCOE" />
+    <style>
+        .bar::after {
+            width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            display: block;
+            content: "";
+            background: #50659c;
+            height: 2px;
+            }
+       
+        #particles-js{
+            height:auto;
+            background: url(img/bg.PNG) no-repeat;
+            background-size:cover ;
+            background-attachment: fixed !important;
+        }
+       
+        .particles-js-canvas-el {            
+            z-index: 0;
+            }
+
+            @media (max-width: 768px){
+            .particles-js-canvas-el {
+                           
+                z-index: 0;
+                }
+        }
+
+        @media (max-width: 568px){
+            .particles-js-canvas-el {
+                height: 100vmax !important;            
+                z-index: 0;
+                }
+        }
+
+        .main-div{
+            padding-top: 150px;
+        }
+
+        @media (max-width: 768px){
+            .main-div{
+            padding-top: 170px;
+        }
+    }
+
+        @media (max-width: 568px){
+            .main-div{
+            padding-top: 200px;
+        }
+    }
+        .logo{
+            max-width:400px;
+            height:auto;
+        }
+
+        @media (max-width: 568px){
+            .logo{
+            max-width:90%;
+            height:auto;
+        }
+    }
+
+    .exp-btn{
+            position: relative;
+            border: 2px solid;
+            border-radius: 0px;
+            padding: 1rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            line-height: 1.5rem;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .3s, outline 0s;
+            transition: all .3s, outline 0s;
+            width: 150px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .exp-btn.btn--voi{
+            background-color:#50659c;
+            color:white;
+        }
+
+
+        /*Animation Flip Card*/
+        .flip-container {
+  -webkit-perspective: 1000;
+  margin: 0 auto 60px auto;
+  width: 320px;
+  height: 250px;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+
+.front {
+  width: 311px;
+  height: 250px;
+  border-radius: 0px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* .front h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.front img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+} */
+
+.back {
+  width: 311px;
+  height: 250px;
+  border-radius: 0px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.back h3 {
+  margin-top: 20px;
+}
+
+.back p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-right:15px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+#contact p{
+    
+    font-size:20px;color: black; font-family: 'Raleway', sans-serif;
+    
+}
+
+.object {
+        padding-top:30px;
+        animation: MoveUpDown 3s linear infinite;
+        position: relative;
+        
+        }
+
+        @keyframes MoveUpDown {
+        0%, 100% {
+            bottom: 0;
+        }
+        50% {
+            bottom: 40px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav style="background: black">       
+        <div style="background-color: white;height:70px;font-size: 30px;padding: 5px;" class="topnav" id="myTopnav">
+            <a href="index.html" style="padding: 10px 16px;float:left;font-weight: 900;font-family: 'Raleway', sans-serif;">
+                <!-- <img style="width:50px;height:auto;" src="img/faw.png"> --> <h5 style="font-family: 'Prompt', sans-serif;font-size:30px;padding:5px;">FestX</h5>
+            </a>
+            <a style="height: 60px;"></a>                                 
+            <a  href="#contact">Contact</a>   
+            <a  href="#events">Events</a>           
+            <a  href="#about">About</a>                
+            <a href="javascript:void(0);" style="padding:22px;" class="icon"  onclick="dk_open()">
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div> 
+            </a>
+        
+        </div>
+    </nav>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="sidebar animate-left" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="dk_close()" style="padding-top: 30px;font-size: 20px;">Close x</a>
+        <a  href="index.html" onclick="dk_close()">Home</a>      
+        <a  href="#about " onclick="dk_close()">About</a>
+        <a  href="#events" onclick="dk_close()">Events</a>
+        <a  href="#contact" onclick="dk_close()">Contact Us</a>
+       
+    </nav>
+    <div id="particles-js">
+        <div>
+            <div style="position: absolute; width:100%;">
+                <div class="main-div">
+                    <center>
+                        <div>
+                            <img data-aos="zoom-in" class="logo" src="img/Frame 1.png" alt="">
+                        </div>
+                        <div>
+                            <h5 data-aos="zoom-in" style="color: white;padding-top: 30px;font-family: 'Prompt', sans-serif;">Presents</h5>
+                        </div>
+                        <div>
+                            <img data-aos="zoom-in" class="logo" src="img/festx1.png" alt="">
+                        </div>
+                    </center>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <div  id="about" style="background-color: white;">
+        <div class="container">
+            <div style="padding-top: 50px;padding-bottom: 70px;">
+                <center>
+                    <div style="padding:50px;">
+                        <h1 class="bar" data-aos="fade-up" style="color:black; font-family: 'Prompt', sans-serif;">ABOUT FestX</h1>
+                    </div>
+                    <div style="max-width: 660px;">
+                    <div class="container">
+                        <p data-aos="fade-up" style="font-size:20px;color: black; font-family: 'Raleway', sans-serif;font-weight:bold;">                            
+                            Department of Electronics and Telecommunications  In Association with ETSA and IETE student forum are thrilled to announce a techfest for you all. <br>
+                            All work and no play makes jack a dull boy! <br>
+                            So FestX is going to be an all inclusive package for learning, fun, and much more! 
+                            The sole purpose of the event is to provide a platform for students to showcase their knowledge and bring together students from colleges in healthy competition.  We look forward to seeing you! <br>
+                            To know more, join our <a target="_blank" href="https://discord.gg/5FxmhnXF">discord</a> server. <br>
+                            
+                        </p>
+                        <p class="object" style="font-size: 30px;font-family: 'Raleway', sans-serif;font-weight: bolder;">Win prizes upto <b><u>15k</u></b> !</p>
+                        <p>To know more about events download Rulebook from below button!</p>
+                    </div>
+                    <div style="padding-top:10px;padding-bottom: 30px;">
+                        <center>
+                           <a href="https://drive.google.com/file/d/1hWYhoxRZA1m-gXpOMhI1a9rnm-tE4sih/view?usp=drivesdk"> <button style="background:#50659c;font-family: 'Raleway', sans-serif;" class="exp-btn btn--voi" type="submit" name="submit" >Rulebook</button></a>
+                        </center>
+                    </div>
+                    <!-- <div class="container">
+                        <div style="padding-bottom: 50px;">
+                            <p></p>
+                        
+                        </div> -->
+                        <!-- <div class="object" style="border:dashed 1px black;padding-top:0px;">
+                            <h2  style="font-family: 'Raleway', sans-serif;color: brown;padding:20px">Get a Chance to win prizes upto <b>15k !</b>
+                            </h2>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    
+    <div id="events" style="background: black;padding-bottom:50px;" class="events">
+        <div class="container">
+            <div style="padding:50px;">
+                <center>
+                    <h1 data-aos="zoom-in" class="bar" style="color:rgb(255, 255, 255);font-family: 'Prompt', sans-serif;">EVENTS</h1>
+                </center>
+            </div>
+            <div>
+                <center>
+                    <div style="padding-bottom: 40px;">
+                        <h1 data-aos="zoom-in" style="color: azure;font-family: 'Prompt', sans-serif;">Inauguration Ceremony</h1>
+                    </div>
+                </center>
+                <div style="padding:20px;" data-aos="fade-up" class="dk">                                
+                    <div class="flip-container">
+                        <div class="flipper">
+                          <div class="front" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                            <div style="padding:20px;">                                        
+                                <div style="padding: 70px 10px 20px 10px;">
+                                   <center> <h5 style="color:white;"><b>Inauguration <br> Ceremony</b></h5></center>
+                                    <center>
+                                        <p style="color:whitesmoke">
+                                            Date : 08/10/2021 <br>
+                                            Time : 10:00 AM
+                                        </p>
+                                    </center>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="back" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                            <div style="padding:20px;">                                        
+                                <div style="padding: 10px 10px 20px 10px;">
+                                    <img style="height:100px;width:auto;border-radius:50%" src="img/g3.jfif" alt="">
+                                    <div style="padding-top:20px;">
+                                        <a style="color:white;" href="https://www.linkedin.com/in/ravindra-kharadkar-35670016"><h5 style="color:white;"><b>Dr. R.D.Kharadkar</b></h5></a>                                                    
+                                        <p style="color:whitesmoke"><b>Chief guest</b> <br>
+                                            Chairman, IETE Pune Section
+                                            
+                                    </div>                                                
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>                                 
+                </div>      
+            </div>       
+            <div style="padding:10px;">
+                <center>
+                    <div style="max-width: 700px;" >
+                        <div class="row">
+                            <div style="padding-bottom: 40px;">
+                                <h1 data-aos="zoom-in" style="color: azure;font-family: 'Prompt', sans-serif;">Non-Technical Events</h1>
+                            </div>
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>Masked Bandits🕵‍♀️</b></h5>
+                                                <p style="color:whitesmoke">
+                                                    Fees: Rs.20/- per head <br>
+                                                    Team of 1-3   <br>
+                                                    <b>Flip back to register </b>
+                                                </p>
+                                               
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"></h5>
+                                                <p style="color:whitesmoke">
+                                                    An event where students solve the puzzles and unlock the next step  by quick and smart thinking. <br> <br>
+                                                    <b>Registration link</b> : <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdBJjchWk0CfFO74uaQ1L17Qev6DLyBZMKE61YmQM9TE94DFA/viewform?fbzx=2026092201184702227">Click here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>QUIZOMANIA 🧩</b></h5>
+                                                <p style="color:whitesmoke"> Fees : Rs.30/- Per head <br>
+                                                    team : Individual<br>
+                                                    <b>Flip back to register </b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"></h5>
+                                                <p style="color:whitesmoke">
+                                                    A rapid-fire event which helps the students to test their knowledge in various domains. <br> <br>
+                                                    <b>Registration link</b> : <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeLib57oyYiqnaqfCIhv6q9TL5q2YK7sk_5jJd7CoUgZ6hMTA/viewform?usp=sf_link">Click here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div style="padding-top:30px;padding-bottom: 40px;">
+                                <h1 data-aos="zoom-in" style="color: azure;font-family: 'Prompt', sans-serif;">Technical Events</h1>
+                            </div>
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>CLASH OF CIRCUITS🔌🕵‍♀️</b></h5>
+                                                <p style="color:whitesmoke"> 
+                                                    Fees : Rs. 30/- Per head      <br>
+                                                    team : Individual<br>
+                                                    <b>Flip back to register </b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"></h5>
+                                                <p style="color:whitesmoke">
+                                                    tests your designing skills and basic concepts of electronics. <br> <br>
+                                                    <b>Registration link</b> : <a target="_blank" href="https://forms.gle/hppdvEmwejELMuUL7">Click here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>BATTLE OF GEEKLORDS 🖥</b></h5>
+                                                <p style="color:whitesmoke">
+                                                    Fees : Rs. 30/- Per head      <br>
+                                                    team : Individual     <br>
+                                                    <b>Flip back to register </b>                                           
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 50px 10px 20px 10px;">
+                                                <h5 style="color:white;"></h5>
+                                                <p style="color:whitesmoke">
+                                                    where enthusiastic coders compete with each other and showcase their coding skills. <br> <br>
+                                                    <b>Registration link</b> : <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf2M2CFjLDrt3AZdXFd_2BCgf3XEl4BCYRI1zAvmSOMWJ8BxQ/viewform?usp=sf_link">Click here</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                            </div>      
+                            <div>
+                                <div style="padding:20px;" data-aos="fade-up" class="dk">                                
+                                    <div class="flip-container">
+                                        <div class="flipper">
+                                          <div class="front" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                            <div style="padding:20px;">                                        
+                                                <div style="padding: 50px 10px 20px 10px;">
+                                                    <h5 style="color:white;"><b>Idea sparkle🖥</b></h5>
+                                                    <p style="color:whitesmoke">
+                                                        Fees: Rs.30/- per team <br>
+                                                        Team of 1-3<br>
+                                                        <b>Flip back to register </b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="back" style="background:rgba(255,255,255,0.1);border:2px solid white;">
+                                            <div style="padding:20px;">                                        
+                                                <div style="padding: 20px 10px 20px 10px;">
+                                                    <h5 style="color:white;"></h5>
+                                                    <p style="color:whitesmoke">
+                                                        An event where Team has to present an idea, model, or Software (maybe a Website or APP) including the problem, solution, and how it can be implemented. <br>
+    <br>                                                     <b>Registration link</b> : <a target="_blank" href="https://forms.gle/UMoxXkApaJP8V54S7">Click here</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>                                      
+                                </div>      
+                            </div>       
+                            
+                            <div style="padding-top:30px;padding-bottom: 40px;">
+                                <h1 data-aos="zoom-in" style="color: azure;font-family: 'Prompt', sans-serif;">Webinars</h1>
+                            </div>
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 40px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>TOPIC : How to embark on a successful Corporate Journey and Onwards!</b></h5>
+                                                <center>
+                                                    <p style="color:whitesmoke">
+                                                        Date : 08/10/2021 <br>
+                                                        Time : 10:30 AM <br>
+                                                        <b>Flip back to register </b>
+                                                    </p>
+                                                </center>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 10px 10px 20px 10px;">
+                                                <img style="height:100px;width:auto;border-radius:50%" src="img/g1.jfif" alt="">
+                                                <div style="padding-top:20px;">
+                                                    <a style="color:white" href="https://www.linkedin.com/in/ankita-nanwani-hemnani-53510415"><h5 style="color:white;"><b>Ankita Nanwani Hemnani</b></h5></a>                                                    
+                                                    <p style="color:whitesmoke">Senior Software Engineering Manager at Expedia Group<br> 
+                                                    <b>Registration Link</b> : <a href="https://forms.gle/qhKYP4yoQ5WAiaJB6">View</a></p>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div style="padding:20px;" data-aos="fade-up" class="dk col-lg-6 col-md-6 col-xs-12 ">                                
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                      <div class="front" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 20px 10px 20px 10px;">
+                                                <h5 style="color:white;"><b>TOPIC : The role of IoT in industry 4.0 and opportunities for engineering graduates in IoT</b></h5>
+                                                <center>
+                                                    <p style="color:whitesmoke">
+                                                        Date : 09/10/2021 <br>
+                                                        Time : 10:00 AM<br>
+                                                        <b>Flip back to register </b>
+                                                    </p>
+                                                </center>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="back" style="height: 280px;background:rgba(255,255,255,0.1);border:2px solid white;">
+                                        <div style="padding:20px;">                                        
+                                            <div style="padding: 10px 10px 20px 10px;">
+                                                <img style="height:100px;width:auto;border-radius:50%" src="img/g2.jfif" alt="">
+                                                <div style="padding-top:20px;">
+                                                    <a style="color:white;" href="https://www.linkedin.com/in/shreyashgajlekar"><h5 style="color:white;"><b>Shreyash Gajlekar</b></h5></a>                                                    
+                                                    <p style="color:whitesmoke">Design Engineer at Tata Technologies
+    <br>                                                     <b>Registration Link</b> : <a href="https://forms.gle/vHFppRVxhCnzLcKs5">View</a></p>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                                      
+                        </div>
+                    </div>
+                </center>
+            </div>                    
+        </div>
+    </div>
+
+    <div  id="contact" style="background-color: white;">
+        <div class="container">
+            <div style="padding-top: 50px;padding-bottom: 70px;">
+                <center>
+                    <div style="padding:50px;">
+                        <h1 class="bar" data-aos="fade-up" style="color:black; font-family: 'Prompt', sans-serif;">CONTACT US</h1>
+                    </div>
+                    <div style="max-width: 660px;">   
+                        <div class="row">
+                            <div data-aos="fade-up" class="col-lg-6 col-md-6">
+                                <p>
+                                   <b>Hiral Bhuptani (9075435401)  </b> <br>
+                                    TE Co-ordinator	
+                                </p>
+                            </div>
+                            <div data-aos="fade-up" class="col-lg-6 col-md-6">
+                                <p>
+                                   <b>Pushkar Mahajan (7219063378) </b>     <br>
+                                    TE Co-ordinator	
+                                </p>
+                            </div>
+                            <div data-aos="fade-up" class="col-lg-6 col-md-6">
+                                <p>
+                                   <b>Ashish Bhagwat (9421934981)  </b> <br>
+                                    BE Co-ordinator	
+                                </p>
+                            </div>                            
+                            <div data-aos="fade-up" class="col-lg-6 col-md-6">
+                                <p>
+                                   <b>Yashraj Jadhav (8055863243)  </b> <br>
+                                    BE Co-ordinator	
+                                </p>
+                            </div>
+                        </div> 
+                        <div>
+                            <center>
+                                <p data-aos="fade-up">
+                                    <b>Swarali Gholave (8600143437) </b> <br>
+                                    President of ETSA-IETE forum	
+                                </p>
+                            </center>
+                        </div>    
+                        <div style="padding-top: 40px;" class="container">
+                                <div  class="middle " >
+                                    <a data-aos="flip-up" class="btn " href="https://instagram.com/etsaietepccoe?igshid=jepkfa14m9r6">
+                                        <img style="height:50px;width:50px;" src="img/social/insta.png" alt="">
+                                    </a>
+                                    <a data-aos="flip-up" class="btn" href="https://www.facebook.com/etsaietepccoe/">
+                                        <img style="height:50px;width:50px;" src="img/social/fb.png" alt="">
+                                    </a>
+                                    <a data-aos="flip-up" class="btn"  href="https://www.linkedin.com/company/iete-pccoe-students-forum">
+                                        <img style="height:50px;width:50px;" src="img/social/li.png" alt="">
+                                    </a>                                
+                                </div>
+                            </div>    
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="margin-top:0px;background: black;padding-top: 24px;padding-bottom: 24px; width: 100%">
+        <center>
+            <div>
+                <p style="color: #c7c5c5;font-weight: 300;font-family: 'Raleway', sans-serif;">All rights reserved <br> Engineered by <a target="_blank" href="https://www.linkedin.com/in/darshan-khope-9400571a2/">Darshan Khope</a> <br> <a target="_blank" href="https://www.linkedin.com/in/hiral-bhuptani/">Hiral Bhuptani</a> <a target="_blank" href="https://www.linkedin.com/in/vaishnavi-gadhave-37a73b1b3/">Vaishnavi Gadhave</a></p>
+            </div>
+        </center>      
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration : 1000,
+        });
+    </script>        
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="particles/particles.js"></script>
+    <script type="text/javascript" src="particles/demo/js/app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
